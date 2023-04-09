@@ -1,0 +1,49 @@
+$colors: (bg: rgba(55, 66, 76, 1),
+    theGreen: rgba(0, 173, 43, 1),
+    theRed: rgba(194, 47, 51, 1),
+    theOrange: rgba(255, 103, 0, 1),
+    theRodeoPink: #f1a1a4,
+    theRodeoBlue: #7f86b0,
+    theYellow: rgb(221, 172, 94),
+    theGray: rgb(78, 92, 107),
+    theBackground: rgba(241, 227, 214, 1),
+    theDarkGray: rgba(43, 50, 56, 1),
+    theBrown: rgba(101, 42, 36, 1),
+    bitByBitRed: rgba(240, 44, 80, 1),
+    bitByBitBlue: rgba(0, 79, 136, 1),
+    bitByBitBlonde: rgba(241, 227, 214, 1),
+    bbb2-TranquilSea: rgba(188, 199, 203, 1),
+    bbb2-RedMyMind: rgba(143, 57, 56, 1),
+    bbb2-SnowyPine: rgba(226, 223, 216, 1),
+    bbb2-Basswood: rgba(188, 166, 142, 1),
+    bbb2-CompassBlue: rgba(51, 66, 87, 1),
+);
+
+@function getColor($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+* {
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    color: getColor(bbb2-TranquilSea);
+    background: getColor(bg);
+}
+
+h1 {}
+
+#inputValue {
+    width: 40vw;
+    font-size: 2vw;
+    outline: none;
+}
+
+#search {
+    color: beige;
+    background-color: getColor(theDarkGray);
+    outline: none;
+    font-size: 2vw;
+}

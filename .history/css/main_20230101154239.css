@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  color: rgb(188, 199, 203);
+  background: rgb(55, 66, 76);
+}
+
+#inputValue {
+  width: 40vw;
+  font-size: 2vw;
+  outline: none;
+}
+
+#search {
+  color: beige;
+  background-color: rgb(43, 50, 56);
+  outline: none;
+  font-size: 2vw;
+}/*# sourceMappingURL=main_20230101154239.css.map */
