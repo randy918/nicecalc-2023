@@ -45,7 +45,6 @@ $colors: (bg: rgba(55, 66, 76, 1),
     --background-color: rgb(24, 24, 24);
     --background-color--cell: rgb(33, 33, 33);
     --type-color-one: rgb(61, 61, 61);
-    --type-color-two: rgb(12, 12, 12);
 }
 
 * {
@@ -78,37 +77,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--background-color);
-    color: var(--type-color-two);
-    min-height: 100vh;
-}
-
-.calculator {
-position: relative;
-width: 30vw;
-
-& .buttons {
-position: relative;
-display: grid;
-
-& #value {
-
-position: relative;
-grid-column: span 4;
-height: 100px;
-line-height: 100px;
-padding: 0 2vw;
-border-radius: .5vw;
-background:getColor(grey600);
-text-align: right;
-
-
-
-
-
-
-
-}
-
-}
+    color: var(--type-color-one);
+    min-height: 100vh
 
 }

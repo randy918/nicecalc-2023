@@ -45,7 +45,7 @@ $colors: (bg: rgba(55, 66, 76, 1),
     --background-color: rgb(24, 24, 24);
     --background-color--cell: rgb(33, 33, 33);
     --type-color-one: rgb(61, 61, 61);
-    --type-color-two: rgb(12, 12, 12);
+    --type-color-v: rgb(61, 61, 61);
 }
 
 * {
@@ -78,7 +78,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--background-color);
-    color: var(--type-color-two);
+    color: var(--type-color-one);
     min-height: 100vh;
 }
 

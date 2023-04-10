@@ -5,6 +5,7 @@
   --background-color: rgb(24, 24, 24);
   --background-color--cell: rgb(33, 33, 33);
   --type-color-one: rgb(61, 61, 61);
+  --type-color-two: rgb(12, 12, 12);
 }
 
 * *::before,
@@ -28,7 +29,29 @@
 }
 
 body {
-  margin-top: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--background-color);
-  color: var(--type-color-one);
+  color: var(--type-color-two);
+  min-height: 100vh;
+}
+
+.calculator {
+  position: relative;
+  width: 30vw;
+}
+.calculator .buttons {
+  position: relative;
+  display: grid;
+}
+.calculator .buttons #value {
+  position: relative;
+  grid-column: span 4;
+  height: 100px;
+  line-height: 100px;
+  padding: 0 2vw;
+  border-radius: 0.5vw;
+  background: rgb(61, 61, 61);
+  text-align: right;
 }/*# sourceMappingURL=main.css.map */
