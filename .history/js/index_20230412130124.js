@@ -19,10 +19,8 @@ const main = function () {
 	let btn = buttons.querySelectorAll("span");
 	let value = document.getElementById("value");
 
-    const defaultDecimalMode = 2;
     const defaultFontSize = 6;
-    const defaultValue = 0;
-    const currentValue = 0;
+    const defaultDecimalMode = 2;
 	// textFit($("#value")[0]);
 
 	//!  10123.1609 functions
@@ -35,23 +33,21 @@ const main = function () {
 				value.innerHTML = eval(value.innerHTML);
 			} else {
 				if (this.innerHTML == "Clear") {
-					clear();
+					value.innerHTML = "0.00";
 				} else {
 					value.innerHTML += this.innerHTML;
-				};
-			};
+				}
+			}
 		});
-	};
-    };
-
-function clear() {
-	value.innerHTML = "0.00";
-}
-    function getFontSize() {
+	}
 
     }
 
+    function getFontSize() {
 
+
+
+    }
 
 	//!  10123.161 0  main body
 

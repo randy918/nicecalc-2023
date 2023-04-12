@@ -49,6 +49,8 @@ function clear() {
 }
     function getFontSize() {
 
+
+
     }
 
 

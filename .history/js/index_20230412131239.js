@@ -38,16 +38,17 @@ const main = function () {
 					clear();
 				} else {
 					value.innerHTML += this.innerHTML;
-				};
-			};
+				}
+			}
 		});
-	};
+	}
     };
-
 function clear() {
 	value.innerHTML = "0.00";
 }
     function getFontSize() {
+
+
 
     }
 

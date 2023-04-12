@@ -21,8 +21,7 @@ const main = function () {
 
     const defaultDecimalMode = 2;
     const defaultFontSize = 6;
-    const defaultValue = 0;
-    const currentValue = 0;
+    const default
 	// textFit($("#value")[0]);
 
 	//!  10123.1609 functions
@@ -38,20 +37,23 @@ const main = function () {
 					clear();
 				} else {
 					value.innerHTML += this.innerHTML;
-				};
-			};
+				}
+			}
 		});
-	};
-    };
+	}
+    }
 
-function clear() {
-	value.innerHTML = "0.00";
-}
     function getFontSize() {
+
+
 
     }
 
+function clear() {
 
+value.innerHTML = "0.00";
+
+}
 
 	//!  10123.161 0  main body
 
