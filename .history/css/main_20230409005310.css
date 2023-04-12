@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+:root {
+  --border-radius: 0.5rem;
+  --width-max: 75vw;
+  --background-color: rgb(24, 24, 24);
+  --background-color--cell: rgb(33, 33, 33);
+  --type-color-one: rgb(61, 61, 61);
+}
+
+* *::before,
+* *::after {
+  box-sizing: border-box;
+  border: none;
+}
+* body,
+* h1,
+* h2,
+* h3,
+* h4,
+* p,
+* figure,
+* blockquote,
+* dl,
+* dd {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--type-color-one);
+  min-height: 100vh;
+}
+
+.calculator {
+  position: relative;
+  width: 30vw;
+}
+.calculator .buttons {
+  position: relative;
+  display: grid;
+}
+.calculator .buttons #value {
+  position: relative;
+  grid-column: span 4;
+  height: 100px;
+  line-height: 100px;
+}/*# sourceMappingURL=main_20230409005310.css.map */

@@ -44,6 +44,7 @@ body {
 .calculator .buttons {
   position: relative;
   display: grid;
+  color: rgb(61, 61, 61);
 }
 .calculator .buttons #value {
   position: relative;
@@ -54,4 +55,6 @@ body {
   border-radius: 0.5vw;
   background: rgb(61, 61, 61);
   text-align: right;
+  font-size: 3vw;
+  color: rgb(33, 33, 33);
 }/*# sourceMappingURL=main.css.map */
