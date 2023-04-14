@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+$colors: (bg: rgba(55, 66, 76, 1),
+    theGreen: rgba(0, 173, 43, 1),
+    theRed: rgba(194, 47, 51, 1),
+    theOrange: rgba(255, 103, 0, 1),
+    theRodeoPink: #f1a1a4,
+    theRodeoBlue: #7f86b0,
+    theYellow: rgb(221, 172, 94),
+    theGray: rgb(78, 92, 107),
+    theBackground: rgba(241, 227, 214, 1),
+    theDarkGray: rgba(43, 50, 56, 1),
+    theBrown: rgba(101, 42, 36, 1),
+    bitByBitRed: rgba(240, 44, 80, 1),
+    bitByBitBlue: rgba(0, 79, 136, 1),
+    bitByBitBlonde: rgba(241, 227, 214, 1),
+    coolGrey50: rgb(245, 247, 250),
+    coolGrey100: rgb(228, 231, 235),
+    coolGrey200: rgb(203, 210, 217),
+    coolGrey300: rgb(154, 165, 177),
+    coolGrey400: rgb(123, 135, 148),
+    coolGrey500: rgb(97, 110, 124),
+    coolGrey600: rgb(82, 96, 109),
+    coolGrey700: rgb(62, 76, 89),
+    coolGrey800: rgb(50, 63, 75),
+    coolGrey900: rgb(31, 41, 51),
+    grey200: rgb(255, 255, 255),
+    grey400: rgb(170, 170, 170),
+    grey600: rgb(61, 61, 61),
+    grey800: rgb(33, 33, 33),
+    grey1000: rgb(24, 24, 24),
+    grey5000: rgb(12, 12, 12),
+    grey10000: rgb(0, 0, 0),
+);
+
+@function getColor($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+;
+
+:root {
+    --border-radius: 0.5rem;
+    --width-max: 75vw;
+    --background-color: rgb(24, 24, 24);
+    --background-color--cell: rgb(33, 33, 33);
+    --type-color-one: rgb(61, 61, 61);
+    --type-color-two: rgb(12, 12, 12);
+}
+
+* {
+
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        border: none;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    figure,
+    blockquote,
+    dl,
+    dd {
+        margin: 0;
+        padding: 0;
+        font-family: "Fira Sans",
+            sans-serif;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--type-color-two);
+    min-height: 100vh;
+}
+
+.calculator {
+    position: relative;
+    width: 30vw;
+
+    & .buttons {
+        position: relative;
+        display: grid;
+        color: getColor(grey600);
+        font-size: 2vw;
+
+
+        & #value {
+            position: relative;
+            grid-column: span 4;
+            height: 10vw;
+            line-height: 10vw;
+            padding: 0 2vw;
+            border-radius: .5vw;
+            background: getColor(grey600);
+            text-align: right;
+            font-size: 6vw;
+            color: getColor(grey800);
+            overflow: hidden;
+            box-shadow: inset 0 6px 4px 0 rgba(0, 0, 0, 0.1);
+            user-select: none;
+            f
+        }
+    }
+}
+
+#canvas {
+
+    display: none;
+
+}
