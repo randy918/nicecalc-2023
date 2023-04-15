@@ -1,0 +1,16 @@
+zydot = [
+    {
+    row: "NEW 2",
+    date: "January 19, 2023",
+    title: "La Cabra Euro Blend 16 Mix Wild Cherry Chile",
+    country: "Chile",
+    code: "LEB16MCC",
+    datecode: 11923,
+    product: "E",
+    pdf: "y",
+    printer: ".ai",
+    kind: "u16m",
+    flavor: "o",
+    dist: "L",
+    new: true,
+  },

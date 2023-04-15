@@ -53,6 +53,7 @@ body {
   height: 10vw;
   line-height: 10vw;
   padding: 0 2vw;
+  margin-bottom: 1vw;
   border-radius: 0.5vw;
   background: rgb(61, 61, 61);
   text-align: right;
@@ -67,15 +68,19 @@ body {
 }
 .calculator .buttons span {
   position: relative;
-  padding: 1vw;
-  margin: 0.5vw;
+  padding: 0.25vw;
+  margin: 0.25vw;
   min-width: 4vw;
   font-size: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgb(61, 61, 61);
-  background: linear-gradient(rgb(33, 33, 33), rgb(12, 12, 12));
+  background: linear-gradient(rgb(24, 24, 24), rgb(12, 12, 12));
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 span.stretch {

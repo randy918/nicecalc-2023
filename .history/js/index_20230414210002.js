@@ -50,7 +50,7 @@ const main = function () {
 			(getValueWidth.canvas = document.createElement("canvas"));
 		let context = canvas.getContext("2d");
 		context.font = "36px 'Fira Sans'";
-        context.fillText('Hello Worjjld!', 100, 200)
+        context.fillText('Hello Worjj0jjld!', 100, 200)
 		let metrics = context.measureText(text);
 		c(metrics.width);
         c("hello")

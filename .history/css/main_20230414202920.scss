@@ -99,7 +99,6 @@ body {
             height: 10vw;
             line-height: 10vw;
             padding: 0 2vw;
-            margin-bottom: 1vw;
             border-radius: .5vw;
             background: getColor(grey600);
             text-align: right;
@@ -114,18 +113,15 @@ body {
 
         & span {
             position: relative;
-            padding: .25vw;
-            margin: 0.25vw;
+            padding: 1vw;
+            margin: 0.5vw;
             min-width: 4vw;
             font-size: 2vw;
             display: flex;
             justify-content: center;
             align-items: center;
             color: getColor(grey600);
-            background: linear-gradient(getColor(grey1000), getColor(grey5000));
-            cursor: pointer;
-            user-select: none;
-
+            background: linear-gradient(getColor(grey800), getColor(grey5000));
 
 
         }

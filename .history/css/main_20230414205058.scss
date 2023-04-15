@@ -98,7 +98,7 @@ body {
             grid-column: span 4;
             height: 10vw;
             line-height: 10vw;
-            padding: 0 2vw;
+            padding: 2 vw;
             margin-bottom: 1vw;
             border-radius: .5vw;
             background: getColor(grey600);
@@ -123,9 +123,6 @@ body {
             align-items: center;
             color: getColor(grey600);
             background: linear-gradient(getColor(grey1000), getColor(grey5000));
-            cursor: pointer;
-            user-select: none;
-
 
 
         }
