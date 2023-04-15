@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+:root {
+  --border-radius: 0.5rem;
+  --width-max: 75vw;
+  --background-color: rgb(24, 24, 24);
+  --background-color--cell: rgb(33, 33, 33);
+  --type-color-one: rgb(61, 61, 61);
+  --type-color-two: rgb(12, 12, 12);
+}
+
+* *::before,
+* *::after {
+  box-sizing: border-box;
+  border: none;
+}
+* body,
+* h1,
+* h2,
+* h3,
+* h4,
+* p,
+* figure,
+* blockquote,
+* dl,
+* dd {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--type-color-two);
+  min-height: 100vh;
+}
+
+.calculator {
+  position: relative;
+  width: 30vw;
+}
+.calculator .buttons {
+  position: relative;
+  display: grid;
+  color: rgb(61, 61, 61);
+  font-size: 2vw;
+}
+.calculator .buttons #value {
+  position: relative;
+  grid-column: span 4;
+  height: 10vw;
+  line-height: 10vw;
+  padding: 0 2vw;
+  border-radius: 0.5vw;
+  background: rgb(61, 61, 61);
+  text-align: right;
+  font-size: 6vw;
+  color: rgb(33, 33, 33);
+  overflow: hidden;
+  box-shadow: inset 0 6px 4px 0 rgba(0, 0, 0, 0.1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: inline-block;
+}
+.calculator .buttons span {
+  position: relative;
+  padding: 1vw;
+  margin: 0.5vw;
+  min-width: 4vw;
+  font-size: 2vw;
+}
+
+span.stretch {
+  transform: scale(2, 1);
+}
+
+#canvas {
+  display: none;
+}/*# sourceMappingURL=main_20230414201622.css.map */
